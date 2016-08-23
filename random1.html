@@ -1,0 +1,35 @@
+<html>
+<body>
+<script>
+       
+        var a,b;
+        var a=parseInt(Math.random(1,9)*9%10);
+		var b=parseInt(Math.random(1,9)*9%10);
+		document.write(" "+ a +" ");
+		document.write(" +" + " ");
+		document.write(" "+ b +" ");
+		document.write("= "+" ");
+</script>
+<form name="f1">
+
+<input type="text" name="t1" placeholder="enter sum"><br><br>
+<input type="submit" name="btn" value="click me!" onClick="func(a,b);">
+</form>
+<script>
+function func(a,b)
+{
+var x,y,value;
+y=a+b;
+x=parseInt(f1.t1.value);
+if(y==x)
+{
+alert("true");
+}
+else
+{
+alert("false");
+}
+}
+</script>
+</body>
+</html>
